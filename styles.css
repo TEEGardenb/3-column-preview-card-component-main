@@ -1,0 +1,120 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  background-color: bisque;
+  margin: 80px 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.container_cards {
+  height: 400px;
+  padding: 41px;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.container_1 {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.container_2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.container_3 {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.title {
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  font-size: 40px;
+  color: hsl(0, 0%, 95%);
+}
+
+.text {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.color_a1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.color_a2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.color_a3 {
+  color: hsl(179, 100%, 13%);
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  border: 0px;
+  cursor: pointer;
+
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: hsl(31, 77%, 52%);
+}
+
+/*button:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsla(0, 0%, 100%, 0.75);
+  border: 2px solid hsl(0, 0%, 95%);
+}*/
+
+.attribution {
+  position: relative;
+  top: -30px;
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    display: flex;
+    margin: 120px 260px 20px 260px;
+  }
+
+  .container_1 {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+  }
+
+  .container_3 {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 15px;
+  }
+
+  .attribution {
+    position: relative;
+    top: 0px;
+  }
+}
